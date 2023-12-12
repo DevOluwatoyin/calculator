@@ -8,24 +8,18 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h3>Sum buddy</h3>
-        <div>
-          <p>Theme</p>
-          <div>
-            <button>Switchers</button>
-          </div>
-        </div>
-      </header>
+      <h3>Sum buddy</h3>
 
       <main>
-        <input type="text" id="display" value="" placeholder="0" readonly />
-        <input type="text" id="result" value="" readonly />
-        <div>
+        <div class="input-container">
+          <input type="text" id="display" value="" placeholder="0" readonly />
+          <input type="text" id="result" value="" readonly />
+        </div>
+        <div class="keypad">
           <button type="button" class="digit" value="7">7</button>
           <button type="button" class="digit" value="8">8</button>
           <button type="button" class="digit" value="9">9</button>
-          <button type="button" id="delete" value="del">Del</button>
+          <button type="button" id="delete" class="control" value="del">Del</button>
 
           <button type="button" class="digit" value="4">4</button>
           <button type="button" class="digit" value="5">5</button>
@@ -42,7 +36,7 @@
           <button type="button" class="digit" value="/">/</button>
           <button type="button" class="digit" value="*">x</button>
 
-          <button type="button" id="reset" value="reset">Reset</button>
+          <button type="button" id="reset" class="control"  value="reset">Reset</button>
           <button type="button" id="equalto" value="=">=</button>
         </div>
       </main>

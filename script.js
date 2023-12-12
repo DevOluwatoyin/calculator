@@ -13,8 +13,7 @@ for (const digit of digits) {
 
 equalTo.addEventListener("click", function () {
   let answer = eval(questionDisplay.value);
-  answerDisplay.value = answer;
-  questionDisplay.value = "";
+  answerDisplay.value = answer.toLocaleString();
 });
 
 del.addEventListener("click", function () {
